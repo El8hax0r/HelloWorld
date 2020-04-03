@@ -9,11 +9,20 @@
 
     <StackPanel>
 
+        <Button Margin="0,20,0,20" Height="150" Width="534">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="images/ic_thumb_up_black_24dp_2x.png" />
+                <TextBlock Margin="30" Text="Thumbs Up" VerticalAlignment="Center"/>
+            </StackPanel>
+        </Button>
+        
         <TextBlock>Enter Name:</TextBlock>
         <TextBox x:Name="uxName"></TextBox>
         <TextBlock>Enter Password:</TextBlock>
         <TextBox x:Name="uxPassword"></TextBox>
-        <Button x:Name="uxSubmit">Submit</Button>
+        <Button x:Name="uxSubmit" Click="uxSubmit_Click">Submit</Button>
+
+        
 
     </StackPanel>
 </Window>

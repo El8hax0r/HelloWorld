@@ -23,6 +23,12 @@ namespace HelloWorld
         public MainWindow()
         {
             InitializeComponent();
+            //this is how you maximize the window state programmatically in *.xaml.cs
+            WindowState = WindowState.Maximized;
+        }
+        private void uxSubmit_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Submitting password:" + uxPassword.Text);
         }
     }
 }
